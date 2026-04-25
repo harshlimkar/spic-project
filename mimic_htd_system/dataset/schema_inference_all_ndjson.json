@@ -1,0 +1,7629 @@
+{
+  "generated_from": "fhir",
+  "dataset_count": 30,
+  "datasets": {
+    "fhir/MimicCondition.ndjson/MimicCondition.ndjson": {
+      "records": 4506,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 4506,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicCondition.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "encounter",
+          "id",
+          "meta",
+          "resourceType",
+          "subject"
+        ],
+        "x_total_records": 4506
+      }
+    },
+    "fhir/MimicConditionED.ndjson/MimicConditionED.ndjson": {
+      "records": 545,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 545,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicConditionED.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "encounter",
+          "id",
+          "meta",
+          "resourceType",
+          "subject"
+        ],
+        "x_total_records": 545
+      }
+    },
+    "fhir/MimicEncounter.ndjson/MimicEncounter.ndjson": {
+      "records": 275,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "class": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "hospitalization": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "location": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "period": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "priority": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "serviceProvider": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "serviceType": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "status": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "type": {
+          "present_in_records": 275,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicEncounter.ndjson",
+        "type": "object",
+        "properties": {
+          "class": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "display": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "display",
+              "system"
+            ]
+          },
+          "hospitalization": {
+            "type": "object",
+            "properties": {
+              "admitSource": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              },
+              "dischargeDisposition": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              }
+            },
+            "required": [
+              "admitSource"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assigner": {
+                  "type": "object",
+                  "properties": {
+                    "reference": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reference"
+                  ]
+                },
+                "system": {
+                  "type": "string"
+                },
+                "use": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assigner",
+                "system",
+                "use",
+                "value"
+              ]
+            }
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "reference": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reference"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "properties": {
+                    "end": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              },
+              "required": [
+                "location",
+                "period"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "period": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "end",
+              "start"
+            ]
+          },
+          "priority": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "serviceProvider": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "serviceType": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          }
+        },
+        "required": [
+          "class",
+          "hospitalization",
+          "id",
+          "identifier",
+          "location",
+          "meta",
+          "period",
+          "priority",
+          "resourceType",
+          "serviceProvider",
+          "serviceType",
+          "status",
+          "subject",
+          "type"
+        ],
+        "x_total_records": 275
+      }
+    },
+    "fhir/MimicEncounterED.ndjson/MimicEncounterED.ndjson": {
+      "records": 222,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "class": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "hospitalization": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "partOf": {
+          "present_in_records": 172,
+          "presence_pct": 77.48,
+          "types": [
+            "object"
+          ]
+        },
+        "period": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "serviceProvider": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "status": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "type": {
+          "present_in_records": 222,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicEncounterED.ndjson",
+        "type": "object",
+        "properties": {
+          "class": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "display": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "display",
+              "system"
+            ]
+          },
+          "hospitalization": {
+            "type": "object",
+            "properties": {
+              "admitSource": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              },
+              "dischargeDisposition": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              }
+            },
+            "required": [
+              "admitSource",
+              "dischargeDisposition"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assigner": {
+                  "type": "object",
+                  "properties": {
+                    "reference": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reference"
+                  ]
+                },
+                "system": {
+                  "type": "string"
+                },
+                "use": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "assigner",
+                "system",
+                "use",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "partOf": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "period": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "end",
+              "start"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "serviceProvider": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          }
+        },
+        "required": [
+          "class",
+          "hospitalization",
+          "id",
+          "identifier",
+          "meta",
+          "period",
+          "resourceType",
+          "serviceProvider",
+          "status",
+          "subject",
+          "type"
+        ],
+        "x_total_records": 222
+      }
+    },
+    "fhir/MimicLocation.ndjson/MimicEncounterICU.ndjson/MimicEncounterICU.ndjson": {
+      "records": 140,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "class": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "location": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "partOf": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "period": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "type": {
+          "present_in_records": 140,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicEncounterICU.ndjson",
+        "type": "object",
+        "properties": {
+          "class": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "system"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "reference": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reference"
+                  ]
+                },
+                "period": {
+                  "type": "object",
+                  "properties": {
+                    "end": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              },
+              "required": [
+                "location",
+                "period"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "partOf": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "period": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "end",
+              "start"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          }
+        },
+        "required": [
+          "class",
+          "id",
+          "identifier",
+          "location",
+          "meta",
+          "partOf",
+          "period",
+          "resourceType",
+          "status",
+          "subject",
+          "type"
+        ],
+        "x_total_records": 140
+      }
+    },
+    "fhir/MimicLocation.ndjson/MimicLocation.ndjson": {
+      "records": 31,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "id": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "managingOrganization": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "name": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "physicalType": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 31,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicLocation.ndjson",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "managingOrganization": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "physicalType": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "managingOrganization",
+          "meta",
+          "name",
+          "physicalType",
+          "resourceType",
+          "status"
+        ],
+        "x_total_records": 31
+      }
+    },
+    "fhir/MimicMedication.ndjson/MimicMedication.ndjson": {
+      "records": 1480,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "code": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 1480,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedication.ndjson",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "id",
+          "identifier",
+          "meta",
+          "resourceType",
+          "status"
+        ],
+        "x_total_records": 1480
+      }
+    },
+    "fhir/MimicMedicationAdministration.ndjson/MimicMedicationAdministration.ndjson": {
+      "records": 36131,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "context": {
+          "present_in_records": 35072,
+          "presence_pct": 97.07,
+          "types": [
+            "object"
+          ]
+        },
+        "dosage": {
+          "present_in_records": 32523,
+          "presence_pct": 90.01,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "id": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "request": {
+          "present_in_records": 35026,
+          "presence_pct": 96.94,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 36131,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationAdministration.ndjson",
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "dosage": {
+            "type": "object",
+            "properties": {
+              "dose": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "system": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": [
+                      "integer",
+                      "number"
+                    ]
+                  }
+                },
+                "required": [
+                  "system",
+                  "value"
+                ]
+              },
+              "method": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dose",
+              "text"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "request": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "effectiveDateTime",
+          "id",
+          "medicationCodeableConcept",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 36131
+      }
+    },
+    "fhir/MimicMedicationAdministrationICU.ndjson/MimicMedicationAdministrationICU.ndjson": {
+      "records": 20404,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "context": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "dosage": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 9366,
+          "presence_pct": 45.9,
+          "types": [
+            "string"
+          ]
+        },
+        "effectivePeriod": {
+          "present_in_records": 11038,
+          "presence_pct": 54.1,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 20404,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationAdministrationICU.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "context": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "dosage": {
+            "type": "object",
+            "properties": {
+              "dose": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "system": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": [
+                      "integer",
+                      "number"
+                    ]
+                  }
+                },
+                "required": [
+                  "code",
+                  "system",
+                  "unit",
+                  "value"
+                ]
+              },
+              "method": {
+                "type": "object",
+                "properties": {
+                  "coding": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "system": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "system"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "coding"
+                ]
+              },
+              "rateQuantity": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "system": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": [
+                      "integer",
+                      "number"
+                    ]
+                  }
+                },
+                "required": [
+                  "code",
+                  "system",
+                  "unit",
+                  "value"
+                ]
+              }
+            },
+            "required": [
+              "dose",
+              "method"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "effectivePeriod": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "end",
+              "start"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "context",
+          "dosage",
+          "id",
+          "medicationCodeableConcept",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 20404
+      }
+    },
+    "fhir/MimicMedicationDispense.ndjson/MimicMedicationDispense.ndjson": {
+      "records": 14293,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "authorizingPrescription": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "context": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "dosageInstruction": {
+          "present_in_records": 14287,
+          "presence_pct": 99.96,
+          "types": [
+            "array"
+          ]
+        },
+        "id": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 14293,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationDispense.ndjson",
+        "type": "object",
+        "properties": {
+          "authorizingPrescription": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "context": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "dosageInstruction": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "maxDosePerPeriod": {
+                  "type": "object",
+                  "properties": {
+                    "denominator": {
+                      "type": "object",
+                      "properties": {
+                        "system": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "system",
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "numerator": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": [
+                            "integer",
+                            "number"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "denominator",
+                    "numerator"
+                  ]
+                },
+                "route": {
+                  "type": "object",
+                  "properties": {
+                    "coding": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "coding"
+                  ]
+                },
+                "timing": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "object",
+                      "properties": {
+                        "coding": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "code": {
+                                "type": "string"
+                              },
+                              "system": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "code",
+                              "system"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "coding"
+                      ]
+                    },
+                    "repeat": {
+                      "type": "object",
+                      "properties": {
+                        "duration": {
+                          "type": "integer"
+                        },
+                        "durationUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "duration",
+                        "durationUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "route",
+                "timing"
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "authorizingPrescription",
+          "context",
+          "id",
+          "identifier",
+          "medicationCodeableConcept",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 14293
+      }
+    },
+    "fhir/MimicMedicationDispenseED.ndjson/MimicMedicationDispenseED.ndjson": {
+      "records": 1082,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "context": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "whenHandedOver": {
+          "present_in_records": 1082,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationDispenseED.ndjson",
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "whenHandedOver": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "context",
+          "id",
+          "medicationCodeableConcept",
+          "meta",
+          "resourceType",
+          "status",
+          "subject",
+          "whenHandedOver"
+        ],
+        "x_total_records": 1082
+      }
+    },
+    "fhir/MimicMedicationMix.ndjson/MimicMedicationMix.ndjson": {
+      "records": 314,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "id": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "ingredient": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "text": {
+          "present_in_records": 314,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationMix.ndjson",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "ingredient": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "itemReference": {
+                  "type": "object",
+                  "properties": {
+                    "reference": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reference"
+                  ]
+                }
+              },
+              "required": [
+                "itemReference"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "text": {
+            "type": "object",
+            "properties": {
+              "div": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "div",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "identifier",
+          "ingredient",
+          "meta",
+          "resourceType",
+          "status",
+          "text"
+        ],
+        "x_total_records": 314
+      }
+    },
+    "fhir/MimicMedicationRequest.ndjson/MimicMedicationRequest.ndjson": {
+      "records": 17552,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "authoredOn": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "dispenseRequest": {
+          "present_in_records": 14574,
+          "presence_pct": 83.03,
+          "types": [
+            "object"
+          ]
+        },
+        "dosageInstruction": {
+          "present_in_records": 15219,
+          "presence_pct": 86.71,
+          "types": [
+            "array"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "intent": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 2327,
+          "presence_pct": 13.26,
+          "types": [
+            "object"
+          ]
+        },
+        "medicationReference": {
+          "present_in_records": 15225,
+          "presence_pct": 86.74,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 17552,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationRequest.ndjson",
+        "type": "object",
+        "properties": {
+          "authoredOn": {
+            "type": "string"
+          },
+          "dispenseRequest": {
+            "type": "object",
+            "properties": {
+              "validityPeriod": {
+                "type": "object",
+                "properties": {
+                  "end": {
+                    "type": "string"
+                  },
+                  "start": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "end",
+                  "start"
+                ]
+              }
+            },
+            "required": [
+              "validityPeriod"
+            ]
+          },
+          "dosageInstruction": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "doseAndRate": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "doseQuantity": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          },
+                          "unit": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": [
+                              "integer",
+                              "number"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "system",
+                          "unit",
+                          "value"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "doseQuantity"
+                    ]
+                  }
+                },
+                "maxDosePerPeriod": {
+                  "type": "object",
+                  "properties": {
+                    "denominator": {
+                      "type": "object",
+                      "properties": {
+                        "system": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "system",
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "numerator": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": [
+                            "integer",
+                            "number"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "denominator",
+                    "numerator"
+                  ]
+                },
+                "route": {
+                  "type": "object",
+                  "properties": {
+                    "coding": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "coding"
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                },
+                "timing": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "object",
+                      "properties": {
+                        "coding": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "code": {
+                                "type": "string"
+                              },
+                              "system": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "code",
+                              "system"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "coding"
+                      ]
+                    },
+                    "repeat": {
+                      "type": "object",
+                      "properties": {
+                        "duration": {
+                          "type": "integer"
+                        },
+                        "durationUnit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "duration",
+                        "durationUnit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "route"
+              ]
+            }
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "intent": {
+            "type": "string"
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "medicationReference": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "authoredOn",
+          "encounter",
+          "id",
+          "identifier",
+          "intent",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 17552
+      }
+    },
+    "fhir/MimicMedicationStatementED.ndjson/MimicMedicationStatementED.ndjson": {
+      "records": 2411,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "context": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "dateAsserted": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "id": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "medicationCodeableConcept": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 2411,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicMedicationStatementED.ndjson",
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "dateAsserted": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "medicationCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "context",
+          "dateAsserted",
+          "id",
+          "medicationCodeableConcept",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 2411
+      }
+    },
+    "fhir/MimicObservationChartevents.ndjson/MimicObservationChartevents.ndjson": {
+      "records": 668862,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "issued": {
+          "present_in_records": 667703,
+          "presence_pct": 99.83,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "referenceRange": {
+          "present_in_records": 18473,
+          "presence_pct": 2.76,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 668862,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueQuantity": {
+          "present_in_records": 257474,
+          "presence_pct": 38.49,
+          "types": [
+            "object"
+          ]
+        },
+        "valueString": {
+          "present_in_records": 411388,
+          "presence_pct": 61.51,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationChartevents.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "issued": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "referenceRange": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "high": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": [
+                        "integer",
+                        "number"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system",
+                    "unit",
+                    "value"
+                  ]
+                },
+                "low": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system",
+                    "unit",
+                    "value"
+                  ]
+                }
+              }
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueQuantity": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "integer",
+                  "number"
+                ]
+              }
+            },
+            "required": [
+              "system",
+              "value"
+            ]
+          },
+          "valueString": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "encounter",
+          "id",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 668862
+      }
+    },
+    "fhir/MimicObservationDatetimeevents.ndjson/MimicObservationDatetimeevents.ndjson": {
+      "records": 15280,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "issued": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueDateTime": {
+          "present_in_records": 15280,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationDatetimeevents.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "issued": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueDateTime": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "encounter",
+          "id",
+          "issued",
+          "meta",
+          "resourceType",
+          "status",
+          "subject",
+          "valueDateTime"
+        ],
+        "x_total_records": 15280
+      }
+    },
+    "fhir/MimicObservationED.ndjson/MimicObservationED.ndjson": {
+      "records": 2742,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "dataAbsentReason": {
+          "present_in_records": 1343,
+          "presence_pct": 48.98,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "partOf": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 2742,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueString": {
+          "present_in_records": 1399,
+          "presence_pct": 51.02,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationED.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "dataAbsentReason": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "partOf": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueString": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "encounter",
+          "id",
+          "meta",
+          "partOf",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 2742
+      }
+    },
+    "fhir/MimicObservationLabevents.ndjson/MimicObservationLabevents.ndjson": {
+      "records": 107727,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "dataAbsentReason": {
+          "present_in_records": 2,
+          "presence_pct": 0.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 79307,
+          "presence_pct": 73.62,
+          "types": [
+            "object"
+          ]
+        },
+        "extension": {
+          "present_in_records": 98398,
+          "presence_pct": 91.34,
+          "types": [
+            "array"
+          ]
+        },
+        "id": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "issued": {
+          "present_in_records": 106735,
+          "presence_pct": 99.08,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "note": {
+          "present_in_records": 18454,
+          "presence_pct": 17.13,
+          "types": [
+            "array"
+          ]
+        },
+        "referenceRange": {
+          "present_in_records": 88999,
+          "presence_pct": 82.62,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "specimen": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "status": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 107727,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueQuantity": {
+          "present_in_records": 95258,
+          "presence_pct": 88.43,
+          "types": [
+            "object"
+          ]
+        },
+        "valueString": {
+          "present_in_records": 12467,
+          "presence_pct": 11.57,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationLabevents.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "dataAbsentReason": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "extension": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "valueString": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "valueString"
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "issued": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          "referenceRange": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "high": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": [
+                        "integer",
+                        "number"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "system",
+                    "value"
+                  ]
+                },
+                "low": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": [
+                        "integer",
+                        "number"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "system",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "high",
+                "low"
+              ]
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "specimen": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueQuantity": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "comparator": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "integer",
+                  "number"
+                ]
+              }
+            },
+            "required": [
+              "system",
+              "value"
+            ]
+          },
+          "valueString": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "id",
+          "identifier",
+          "meta",
+          "resourceType",
+          "specimen",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 107727
+      }
+    },
+    "fhir/MimicObservationMicroOrg.ndjson/MimicObservationMicroOrg.ndjson": {
+      "records": 338,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "derivedFrom": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "hasMember": {
+          "present_in_records": 119,
+          "presence_pct": 35.21,
+          "types": [
+            "array"
+          ]
+        },
+        "id": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 338,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueString": {
+          "present_in_records": 219,
+          "presence_pct": 64.79,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationMicroOrg.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "derivedFrom": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "hasMember": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueString": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "derivedFrom",
+          "effectiveDateTime",
+          "id",
+          "meta",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 338
+      }
+    },
+    "fhir/MimicObservationMicroSusc.ndjson/MimicObservationMicroSusc.ndjson": {
+      "records": 1036,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "derivedFrom": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "extension": {
+          "present_in_records": 998,
+          "presence_pct": 96.33,
+          "types": [
+            "array"
+          ]
+        },
+        "id": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "note": {
+          "present_in_records": 372,
+          "presence_pct": 35.91,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueCodeableConcept": {
+          "present_in_records": 1036,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationMicroSusc.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "derivedFrom": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "valueQuantity": {
+                  "type": "object",
+                  "properties": {
+                    "comparator": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": [
+                        "integer",
+                        "number"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "url",
+                "valueQuantity"
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "note": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "derivedFrom",
+          "effectiveDateTime",
+          "id",
+          "identifier",
+          "meta",
+          "resourceType",
+          "status",
+          "subject",
+          "valueCodeableConcept"
+        ],
+        "x_total_records": 1036
+      }
+    },
+    "fhir/MimicObservationMicroTest.ndjson/MimicObservationMicroTest.ndjson": {
+      "records": 1893,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 1355,
+          "presence_pct": 71.58,
+          "types": [
+            "object"
+          ]
+        },
+        "hasMember": {
+          "present_in_records": 252,
+          "presence_pct": 13.31,
+          "types": [
+            "array"
+          ]
+        },
+        "id": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "specimen": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "status": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1893,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueCodeableConcept": {
+          "present_in_records": 145,
+          "presence_pct": 7.66,
+          "types": [
+            "object"
+          ]
+        },
+        "valueString": {
+          "present_in_records": 1496,
+          "presence_pct": 79.03,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationMicroTest.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "hasMember": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "specimen": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueCodeableConcept": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "valueString": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "id",
+          "meta",
+          "resourceType",
+          "specimen",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 1893
+      }
+    },
+    "fhir/MimicObservationOutputevents.ndjson/MimicObservationOutputevents.ndjson": {
+      "records": 9362,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "issued": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueQuantity": {
+          "present_in_records": 9362,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationOutputevents.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "issued": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueQuantity": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "code",
+              "system",
+              "unit",
+              "value"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "encounter",
+          "id",
+          "issued",
+          "meta",
+          "resourceType",
+          "status",
+          "subject",
+          "valueQuantity"
+        ],
+        "x_total_records": 9362
+      }
+    },
+    "fhir/MimicObservationVitalSignsED.ndjson/MimicObservationVitalSignsED.ndjson": {
+      "records": 6300,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "category": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "code": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "component": {
+          "present_in_records": 1260,
+          "presence_pct": 20.0,
+          "types": [
+            "array"
+          ]
+        },
+        "dataAbsentReason": {
+          "present_in_records": 764,
+          "presence_pct": 12.13,
+          "types": [
+            "object"
+          ]
+        },
+        "effectiveDateTime": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "partOf": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 6300,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "valueQuantity": {
+          "present_in_records": 4339,
+          "presence_pct": 68.87,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicObservationVitalSignsED.ndjson",
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "component": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "object",
+                  "properties": {
+                    "coding": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "display": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "display",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "coding"
+                  ]
+                },
+                "dataAbsentReason": {
+                  "type": "object",
+                  "properties": {
+                    "coding": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "display": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "display",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "coding"
+                  ]
+                },
+                "valueQuantity": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system",
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "code"
+              ]
+            }
+          },
+          "dataAbsentReason": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "effectiveDateTime": {
+            "type": "string"
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "partOf": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reference"
+              ]
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "valueQuantity": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "system": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "integer",
+                  "number"
+                ]
+              }
+            },
+            "required": [
+              "code",
+              "system",
+              "unit",
+              "value"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "effectiveDateTime",
+          "encounter",
+          "id",
+          "meta",
+          "partOf",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 6300
+      }
+    },
+    "fhir/MimicOrganization.ndjson/MimicOrganization.ndjson": {
+      "records": 1,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "active": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "boolean"
+          ]
+        },
+        "id": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "name": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "type": {
+          "present_in_records": 1,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicOrganization.ndjson",
+        "type": "object",
+        "properties": {
+          "active": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "display": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "display",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          }
+        },
+        "required": [
+          "active",
+          "id",
+          "identifier",
+          "meta",
+          "name",
+          "resourceType",
+          "type"
+        ],
+        "x_total_records": 1
+      }
+    },
+    "fhir/MimicPatient.ndjson/MimicPatient.ndjson": {
+      "records": 100,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "birthDate": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "communication": {
+          "present_in_records": 92,
+          "presence_pct": 92.0,
+          "types": [
+            "array"
+          ]
+        },
+        "deceasedDateTime": {
+          "present_in_records": 31,
+          "presence_pct": 31.0,
+          "types": [
+            "string"
+          ]
+        },
+        "extension": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "gender": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "id": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "managingOrganization": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "maritalStatus": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "meta": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "name": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 100,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicPatient.ndjson",
+        "type": "object",
+        "properties": {
+          "birthDate": {
+            "type": "string"
+          },
+          "communication": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "object",
+                  "properties": {
+                    "coding": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "coding"
+                  ]
+                }
+              },
+              "required": [
+                "language"
+              ]
+            }
+          },
+          "deceasedDateTime": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "extension": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "url": {
+                        "type": "string"
+                      },
+                      "valueCoding": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "display": {
+                            "type": "string"
+                          },
+                          "system": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "display",
+                          "system"
+                        ]
+                      },
+                      "valueString": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "url"
+                    ]
+                  }
+                },
+                "url": {
+                  "type": "string"
+                },
+                "valueCode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url"
+              ]
+            }
+          },
+          "gender": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "managingOrganization": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "maritalStatus": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "name": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "family": {
+                  "type": "string"
+                },
+                "use": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "family",
+                "use"
+              ]
+            }
+          },
+          "resourceType": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "birthDate",
+          "extension",
+          "gender",
+          "id",
+          "identifier",
+          "managingOrganization",
+          "maritalStatus",
+          "meta",
+          "name",
+          "resourceType"
+        ],
+        "x_total_records": 100
+      }
+    },
+    "fhir/MimicProcedure.ndjson/MimicProcedure.ndjson": {
+      "records": 722,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "code": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "performedDateTime": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 722,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicProcedure.ndjson",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "performedDateTime": {
+            "type": "string"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "encounter",
+          "id",
+          "meta",
+          "performedDateTime",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 722
+      }
+    },
+    "fhir/MimicProcedureED.ndjson/MimicProcedureED.ndjson": {
+      "records": 1260,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "code": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "performedDateTime": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1260,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicProcedureED.ndjson",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "performedDateTime": {
+            "type": "string"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "encounter",
+          "id",
+          "meta",
+          "performedDateTime",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 1260
+      }
+    },
+    "fhir/MimicProcedureICU.ndjson/MimicProcedureICU.ndjson": {
+      "records": 1468,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "bodySite": {
+          "present_in_records": 353,
+          "presence_pct": 24.05,
+          "types": [
+            "array"
+          ]
+        },
+        "category": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "code": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "encounter": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "performedPeriod": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "status": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1468,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicProcedureICU.ndjson",
+        "type": "object",
+        "properties": {
+          "bodySite": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "coding": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "string"
+                      },
+                      "system": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "system"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "coding"
+              ]
+            }
+          },
+          "category": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "code": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          },
+          "encounter": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "performedPeriod": {
+            "type": "object",
+            "properties": {
+              "end": {
+                "type": "string"
+              },
+              "start": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "end",
+              "start"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "code",
+          "encounter",
+          "id",
+          "meta",
+          "performedPeriod",
+          "resourceType",
+          "status",
+          "subject"
+        ],
+        "x_total_records": 1468
+      }
+    },
+    "fhir/MimicSpecimen.ndjson/MimicSpecimen.ndjson": {
+      "records": 1336,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "collection": {
+          "present_in_records": 1291,
+          "presence_pct": 96.63,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "type": {
+          "present_in_records": 1336,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicSpecimen.ndjson",
+        "type": "object",
+        "properties": {
+          "collection": {
+            "type": "object",
+            "properties": {
+              "collectedDateTime": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "collectedDateTime"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "type": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "display": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "display",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "identifier",
+          "meta",
+          "resourceType",
+          "subject",
+          "type"
+        ],
+        "x_total_records": 1336
+      }
+    },
+    "fhir/MimicSpecimenLab.ndjson/MimicSpecimenLab.ndjson": {
+      "records": 11122,
+      "invalid_json_lines": 0,
+      "top_level_fields": {
+        "collection": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "id": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "identifier": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "array"
+          ]
+        },
+        "meta": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "resourceType": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "string"
+          ]
+        },
+        "subject": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        },
+        "type": {
+          "present_in_records": 11122,
+          "presence_pct": 100.0,
+          "types": [
+            "object"
+          ]
+        }
+      },
+      "inferred_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "MimicSpecimenLab.ndjson",
+        "type": "object",
+        "properties": {
+          "collection": {
+            "type": "object",
+            "properties": {
+              "collectedDateTime": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "collectedDateTime"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "system": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system",
+                "value"
+              ]
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "object",
+            "properties": {
+              "reference": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "reference"
+            ]
+          },
+          "type": {
+            "type": "object",
+            "properties": {
+              "coding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "system": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "system"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "coding"
+            ]
+          }
+        },
+        "required": [
+          "collection",
+          "id",
+          "identifier",
+          "meta",
+          "resourceType",
+          "subject",
+          "type"
+        ],
+        "x_total_records": 11122
+      }
+    }
+  },
+  "summary": [
+    {
+      "dataset": "fhir/MimicCondition.ndjson/MimicCondition.ndjson",
+      "records": 4506,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicConditionED.ndjson/MimicConditionED.ndjson",
+      "records": 545,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicEncounter.ndjson/MimicEncounter.ndjson",
+      "records": 275,
+      "invalid_lines": 0,
+      "top_level_field_count": 14
+    },
+    {
+      "dataset": "fhir/MimicEncounterED.ndjson/MimicEncounterED.ndjson",
+      "records": 222,
+      "invalid_lines": 0,
+      "top_level_field_count": 12
+    },
+    {
+      "dataset": "fhir/MimicLocation.ndjson/MimicEncounterICU.ndjson/MimicEncounterICU.ndjson",
+      "records": 140,
+      "invalid_lines": 0,
+      "top_level_field_count": 11
+    },
+    {
+      "dataset": "fhir/MimicLocation.ndjson/MimicLocation.ndjson",
+      "records": 31,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicMedication.ndjson/MimicMedication.ndjson",
+      "records": 1480,
+      "invalid_lines": 0,
+      "top_level_field_count": 6
+    },
+    {
+      "dataset": "fhir/MimicMedicationAdministration.ndjson/MimicMedicationAdministration.ndjson",
+      "records": 36131,
+      "invalid_lines": 0,
+      "top_level_field_count": 10
+    },
+    {
+      "dataset": "fhir/MimicMedicationAdministrationICU.ndjson/MimicMedicationAdministrationICU.ndjson",
+      "records": 20404,
+      "invalid_lines": 0,
+      "top_level_field_count": 11
+    },
+    {
+      "dataset": "fhir/MimicMedicationDispense.ndjson/MimicMedicationDispense.ndjson",
+      "records": 14293,
+      "invalid_lines": 0,
+      "top_level_field_count": 10
+    },
+    {
+      "dataset": "fhir/MimicMedicationDispenseED.ndjson/MimicMedicationDispenseED.ndjson",
+      "records": 1082,
+      "invalid_lines": 0,
+      "top_level_field_count": 8
+    },
+    {
+      "dataset": "fhir/MimicMedicationMix.ndjson/MimicMedicationMix.ndjson",
+      "records": 314,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicMedicationRequest.ndjson/MimicMedicationRequest.ndjson",
+      "records": 17552,
+      "invalid_lines": 0,
+      "top_level_field_count": 13
+    },
+    {
+      "dataset": "fhir/MimicMedicationStatementED.ndjson/MimicMedicationStatementED.ndjson",
+      "records": 2411,
+      "invalid_lines": 0,
+      "top_level_field_count": 8
+    },
+    {
+      "dataset": "fhir/MimicObservationChartevents.ndjson/MimicObservationChartevents.ndjson",
+      "records": 668862,
+      "invalid_lines": 0,
+      "top_level_field_count": 13
+    },
+    {
+      "dataset": "fhir/MimicObservationDatetimeevents.ndjson/MimicObservationDatetimeevents.ndjson",
+      "records": 15280,
+      "invalid_lines": 0,
+      "top_level_field_count": 11
+    },
+    {
+      "dataset": "fhir/MimicObservationED.ndjson/MimicObservationED.ndjson",
+      "records": 2742,
+      "invalid_lines": 0,
+      "top_level_field_count": 12
+    },
+    {
+      "dataset": "fhir/MimicObservationLabevents.ndjson/MimicObservationLabevents.ndjson",
+      "records": 107727,
+      "invalid_lines": 0,
+      "top_level_field_count": 18
+    },
+    {
+      "dataset": "fhir/MimicObservationMicroOrg.ndjson/MimicObservationMicroOrg.ndjson",
+      "records": 338,
+      "invalid_lines": 0,
+      "top_level_field_count": 11
+    },
+    {
+      "dataset": "fhir/MimicObservationMicroSusc.ndjson/MimicObservationMicroSusc.ndjson",
+      "records": 1036,
+      "invalid_lines": 0,
+      "top_level_field_count": 13
+    },
+    {
+      "dataset": "fhir/MimicObservationMicroTest.ndjson/MimicObservationMicroTest.ndjson",
+      "records": 1893,
+      "invalid_lines": 0,
+      "top_level_field_count": 13
+    },
+    {
+      "dataset": "fhir/MimicObservationOutputevents.ndjson/MimicObservationOutputevents.ndjson",
+      "records": 9362,
+      "invalid_lines": 0,
+      "top_level_field_count": 11
+    },
+    {
+      "dataset": "fhir/MimicObservationVitalSignsED.ndjson/MimicObservationVitalSignsED.ndjson",
+      "records": 6300,
+      "invalid_lines": 0,
+      "top_level_field_count": 13
+    },
+    {
+      "dataset": "fhir/MimicOrganization.ndjson/MimicOrganization.ndjson",
+      "records": 1,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicPatient.ndjson/MimicPatient.ndjson",
+      "records": 100,
+      "invalid_lines": 0,
+      "top_level_field_count": 12
+    },
+    {
+      "dataset": "fhir/MimicProcedure.ndjson/MimicProcedure.ndjson",
+      "records": 722,
+      "invalid_lines": 0,
+      "top_level_field_count": 8
+    },
+    {
+      "dataset": "fhir/MimicProcedureED.ndjson/MimicProcedureED.ndjson",
+      "records": 1260,
+      "invalid_lines": 0,
+      "top_level_field_count": 8
+    },
+    {
+      "dataset": "fhir/MimicProcedureICU.ndjson/MimicProcedureICU.ndjson",
+      "records": 1468,
+      "invalid_lines": 0,
+      "top_level_field_count": 10
+    },
+    {
+      "dataset": "fhir/MimicSpecimen.ndjson/MimicSpecimen.ndjson",
+      "records": 1336,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    },
+    {
+      "dataset": "fhir/MimicSpecimenLab.ndjson/MimicSpecimenLab.ndjson",
+      "records": 11122,
+      "invalid_lines": 0,
+      "top_level_field_count": 7
+    }
+  ]
+}

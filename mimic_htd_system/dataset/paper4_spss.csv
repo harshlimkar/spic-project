@@ -1,0 +1,31 @@
+Iteration,Technology,Clinician Trust Score,Confidence Level,Confidence Level
+1,XAI+HITL,93.1,High,🟢 High
+1,Black-Box AI,52.4,Low,🔴 Low
+2,XAI+HITL,94.2,High,🟢 High
+2,Black-Box AI,53.1,Low,🔴 Low
+3,XAI+HITL,94.8,High,🟢 High
+3,Black-Box AI,52.7,Low,🔴 Low
+4,XAI+HITL,93.5,High,🟢 High
+4,Black-Box AI,53.8,Low,🔴 Low
+5,XAI+HITL,94,High,🟢 High
+5,Black-Box AI,54.1,Low,🔴 Low
+6,XAI+HITL,94.6,High,🟢 High
+6,Black-Box AI,53.5,Low,🔴 Low
+7,XAI+HITL,92.8,High,🟢 High
+7,Black-Box AI,51.9,Low,🔴 Low
+8,XAI+HITL,93.2,High,🟢 High
+8,Black-Box AI,54,Moderate,🟡 Moderate
+9,XAI+HITL,92.7,High,🟢 High
+9,Black-Box AI,51.8,Low,🔴 Low
+10,XAI+HITL,95.1,High,🟢 High
+10,Black-Box AI,52.9,Low,🔴 Low
+11,XAI+HITL,93.9,High,🟢 High
+11,Black-Box AI,52.6,Low,🔴 Low
+12,XAI+HITL,94.3,High,🟢 High
+12,Black-Box AI,53.7,Low,🔴 Low
+13,XAI+HITL,93.4,High,🟢 High
+13,Black-Box AI,52.1,Low,🔴 Low
+14,XAI+HITL,92.9,High,🟢 High
+14,Black-Box AI,52.8,Low,🔴 Low
+15,XAI+HITL,93,High,🟢 High
+15,Black-Box AI,52.3,Low,🔴 Low

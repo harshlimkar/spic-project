@@ -1,24 +1,69 @@
-# MIMIC HTD System - Backend Logic Documentation
+## Title Agentic AI System for Trauma Emergency Decisions.
 
-This document explains the backend architecture, agent workflow, and code logic for the trauma decision system.
-It intentionally excludes frontend implementation details.
+## Why Agentic AI?
 
-## 1. What This Backend Does
+Agentic AI is useful because trauma emergencies need fast, structured, and explainable decisions.
+One model alone can miss important clinical details, but multiple agents can split the work and reason from different angles.
 
-The backend is a task-based multi-agent decision system for trauma use-cases.
-It combines:
-- FHIR NDJSON ingestion
-- SQLite case store
-- SQL-based retrieval (RAG-style)
-- Hierarchical Task Decomposition (HTD) agents
-- Optional Ollama LLM synthesis
-- Evaluation and SPSS-ready CSV export
+## What is Trauma Emergency?
+
+Trauma emergency means urgent medical care for patients with serious injuries.
+Examples include major accidents, bleeding, head injury, shock, breathing problems, and other life-threatening conditions.
+
+## Main Problem
+
+Trauma decision-making is hard because:
+- data is large and mixed across many clinical sources
+- decisions must be fast
+- unsafe suggestions can harm patients
+- black-box AI is difficult to trust in clinical settings
+
+## Main Solution
+
+This system solves the problem by:
+- reading FHIR NDJSON clinical data
+- converting it into patient cases
+- storing the cases in SQLite
+- retrieving similar cases with RAG
+- running multi-agent reasoning for each research paper
+- generating final metrics and clinical outputs
+
+## Research Titles and How They Work
+
+| Research Paper | What it studies | How it works |
+|---|---|---|
+| Paper 1 | Inter-Agent Agreement | Specialized agents reason separately, then their scores are combined |
+| Paper 2 | Decision Time and Accuracy | The case is split into smaller tasks to reduce delay and improve accuracy |
+| Paper 3 | Unsafe Recommendation Rate | Safety verification layers check each recommendation before it is accepted |
+| Paper 4 | Clinician Trust Score | Explainability and human-in-the-loop control increase trust |
+
+## Simple Idea
+
+- Input: FHIR NDJSON clinical data
+- Process: store data in SQLite, retrieve similar cases with RAG, and run multi-agent reasoning
+- Output: clinical metrics and research results for four papers
+
+This README gives a simple view of how the backend works.
+It covers the data flow, the four research papers, and the code that powers them.
+
+## 1. Paper Summary
+
+| Paper | Problem | Solution | Output |
+|---|---|---|---|
+| Paper 1 | Trauma decisions are inconsistent when one model handles everything | Role-Based Multi-Agent System (RB-MAS) | Inter-Agent Agreement Rate |
+| Paper 2 | Sequential trauma workflows are slow and less coordinated | Hierarchical Task Decomposition (HTD) | Decision Time and Accuracy |
+| Paper 3 | Direct AI can produce unsafe trauma recommendations | Verification-Driven Agentic AI | Unsafe Recommendation Rate |
+| Paper 4 | Black-box AI is hard to trust in clinical use | Explainable AI with Human-in-the-Loop control | Clinician Trust Score |
+
+## 2. What This Backend Does
+
+The backend turns FHIR NDJSON clinical data into patient cases, stores them in SQLite, retrieves similar cases with SQL RAG, and runs the four paper algorithms.
 
 Core backend entry points:
 - CLI pipeline: main.py
 - REST API: api.py
 
-## 2. End-to-End Backend Flow
+## 3. End-to-End Backend Flow
 
 1. Ingestion
 - FHIRIngestionPipeline reads NDJSON resources from dataset_dir.
@@ -48,7 +93,7 @@ Core backend entry points:
   - results/evaluation_results.csv
   - results/mode_summary_stats.csv
 
-## 2.1 Architecture Flow (Backend)
+## 3.1 Architecture Flow (Backend)
 
 ```text
 NDJSON Files (30 datasets)
@@ -88,7 +133,7 @@ RAG + LLM usage note:
 - The system uses SQL-based RAG retrieval from ingested NDJSON-derived case records to build grounded context for the LLM.
 - This is retrieval-augmented clinical reasoning over stored data, used as data context for inference and report generation.
 
-## 3. Data Ingestion Logic
+## 4. Data Ingestion Logic
 
 Implementation: pipeline/ingestion.py
 
@@ -111,7 +156,7 @@ Important logic:
   - procedure_features
   - aggregate counts
 
-## 4. Database Schema and Query Logic
+## 5. Database Schema and Query Logic
 
 Implementation: pipeline/database.py
 
@@ -127,7 +172,7 @@ Key backend methods:
 - save_evaluation_result(data): stores all decision artifacts.
 - get_all_results(): returns full result history.
 
-## 5. Agent Architecture and HTD Logic
+## 6. Agent Architecture and HTD Logic
 
 Implementation:
 - agents/orchestrator.py
@@ -187,7 +232,7 @@ Main operations:
 - calls LLM for structured report
 - parses report and applies confidence fallback when needed
 
-## 6. Orchestrator Modes and Coordination Semantics
+## 7. Orchestrator Modes and Coordination Semantics
 
 Implementation: agents/orchestrator.py
 
@@ -213,7 +258,7 @@ Additional backend logic:
 - _derive_mode_confidence() applies mode-specific confidence bands with stable + run-time jitter and case-size bias.
 - execution_time_sec and processing_steps are captured for each run.
 
-## 7. LLM Layer and Offline Fallback
+## 8. LLM Layer and Offline Fallback
 
 Implementation: llm/ollama_client.py
 
@@ -225,7 +270,7 @@ Implementation: llm/ollama_client.py
   - upstream agent outputs
 - If unavailable or request fails, _fallback_response() returns deterministic text output.
 
-## 8. Evaluation and Research Output Pipeline
+## 9. Evaluation and Research Output Pipeline
 
 Implementation: evaluation/runner.py
 
@@ -241,7 +286,7 @@ Flattened CSV includes:
 - risk/planning/decision outputs
 - mode indicator columns for downstream ANOVA/regression workflows
 
-## 9. Paper-specific Backend Engines (Algorithm Modules)
+## 10. Paper-specific Backend Engines (Algorithm Modules)
 
 Implementations:
 - backend/paper1/role_based_consistency_engine.py
@@ -268,7 +313,7 @@ Implementations:
 - combines explainability factors with weighted calibration
 - output: clinician_trust_score_percent, trust_band
 
-## 9.1 Clean PICO Summary for Each Paper
+## 10.1 Clean PICO Summary for Each Paper
 
 This section explains each research paper in plain PICO terms and shows how the backend computes the result.
 
@@ -336,7 +381,7 @@ How it works:
 - LLM-ready summaries: the backend can send the structured outputs to Ollama for narrative explanation.
 - Deterministic fallback: if Ollama is unavailable, the backend still returns a reproducible result.
 
-## 10. UI Simulation Boundary (Backend-Relevant Note)
+## 11. UI Simulation Boundary (Backend-Relevant Note)
 
 Each paper backend engine includes simulate_backend_processing(delay_seconds).
 This method is a deliberate simulation hook and is separate from the full algorithmic computation paths:
@@ -347,7 +392,7 @@ This method is a deliberate simulation hook and is separate from the full algori
 
 For backend computation and research outputs, use the full algorithm methods above, not the simulation hook.
 
-## 11. How to Run Backend Only
+## 12. How to Run Backend Only
 
 ### CLI
 ```bash
@@ -367,7 +412,7 @@ Then call:
 - GET /results
 - GET /results/summary
 
-## 12. Backend Code Map
+## 13. Backend Code Map
 
 - main.py: backend CLI entry and phase control
 - api.py: REST contract for ingestion/evaluation/results
@@ -380,7 +425,7 @@ Then call:
 - evaluation/runner.py: iteration runner + SPSS-oriented exports
 - backend/paper*/: paper-specific algorithm engines
 
-## 13. Comprehensive Code Enhancement Summary
+## 14. Comprehensive Code Enhancement Summary
 
 This section captures the production-grade backend enhancement pattern applied across the research algorithm modules.
 

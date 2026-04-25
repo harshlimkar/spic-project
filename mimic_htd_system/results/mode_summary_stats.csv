@@ -1,0 +1,5 @@
+mode,n,mean_execution_time_sec,mean_processing_steps,mean_confidence,mean_risk_score
+basic,20,0.0,3.0,0.776,0.0
+sequential,20,0.0004,19.0,0.75,6.0
+semi_coordinated,20,0.0183,20.0,0.85,6.0
+fully_coordinated,20,0.0185,20.0,0.95,6.0
